@@ -12,10 +12,13 @@ namespace Touz
 
         public string Discription { get;  set; }
 
-        public Photo(string url, string discription)
+        public string Location { get; set; }
+
+        public Photo(string url, string discription, string location)
         {
             Url = url;
             Discription = discription;
+            Location = location;
         }
     }
 }

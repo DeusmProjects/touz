@@ -10,7 +10,7 @@ namespace Touz
     {
         public User()
         {
-            Photos = new List<string>();
+            Photos = new List<Photo>();
         }
 
         public string Name { get; set; }
@@ -19,6 +19,16 @@ namespace Touz
 
         public string Avatar { get; set; }
 
-        public List<string> Photos { get; set; } 
+        public string About { get; set; }
+
+        public List<Photo> Photos { get; set; }
+
+        public override string ToString()
+        {
+            return  Name + "\n" + 
+                    Ref + "\n" +
+                    Avatar + "\n" +
+                    About + "\n";
+        }
     }
 }
